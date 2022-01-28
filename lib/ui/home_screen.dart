@@ -6,6 +6,7 @@ import 'theme/style.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_portfolio/components/pixel_button.dart';
 import 'package:flutter_portfolio/components/flutter_popup.dart';
+import 'package:flutter_portfolio/components/whois_popup.dart';
 import 'dart:html' as html;
 import 'dart:js' as js;
 
@@ -114,7 +115,13 @@ class HomeScreenState extends State<HomeScreen> {
                 ),
                 PixelButton(
                   onTap: (){
-
+                    showDialog(
+                        context: context,
+                        barrierDismissible: true,
+                        builder: (context) => Center(
+                            child: WhoIsPopup()
+                        )
+                    );
                   },
                   text: "WHOIS",
                 ),

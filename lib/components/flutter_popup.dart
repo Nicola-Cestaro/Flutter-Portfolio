@@ -49,7 +49,7 @@ class FlutterPopup extends StatelessWidget {
                             child: ConstrainedBox(
                               constraints: const BoxConstraints(maxWidth: 15,maxHeight: 15),
                               child: TextButton(
-                                onPressed: (){},
+                                onPressed: () => Navigator.pop(context),
                                 child: Container(),
                               ),
                             ),
@@ -89,7 +89,7 @@ class FlutterPopup extends StatelessWidget {
                   children: [
                     RetroWrapper(
                       child: FlatButton(
-                        onPressed: (){},
+                        onPressed: () => Navigator.pop(context),
                         child: Text(
                             "Cancel",
                             style: GoogleFonts.vt323(
@@ -102,7 +102,7 @@ class FlutterPopup extends StatelessWidget {
                     ),
                     RetroWrapper(
                       child: FlatButton(
-                        onPressed: (){},
+                        onPressed: () => Navigator.pop(context),
                         child: Text(
                           "Ignore",
                           style: GoogleFonts.vt323(
