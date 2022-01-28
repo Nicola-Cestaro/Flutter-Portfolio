@@ -23,7 +23,7 @@ class HomeScreen extends StatefulWidget{
 
 class HomeScreenState extends State<HomeScreen> {
 
-  int pageSteps = 0;
+  int pageSteps = 2;
 
   @override
   Widget build(BuildContext context){
