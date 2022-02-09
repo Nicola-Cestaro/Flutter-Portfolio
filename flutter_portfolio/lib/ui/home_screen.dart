@@ -23,7 +23,7 @@ class HomeScreen extends StatefulWidget{
 
 class HomeScreenState extends State<HomeScreen> {
 
-  int pageSteps = 2;
+  int pageSteps = 0;
 
   @override
   Widget build(BuildContext context){
@@ -42,7 +42,7 @@ class HomeScreenState extends State<HomeScreen> {
           children: [
             AnimatedPositioned(
               duration:  pageSteps == 1 ? const Duration(milliseconds: 400) : const Duration(milliseconds: 800),
-              top: pageSteps == 0 ? screenSize.height / 2 : pageSteps == 1 ? screenSize.height / 2 - 50 : screenSize.height / 3,
+              top: pageSteps == 0 ? screenSize.height / 2 : pageSteps == 1 ? screenSize.height / 2 - 50 : screenSize.height / 4,
               curve: Curves.easeInOutExpo,
               child: Column(
                 children: [

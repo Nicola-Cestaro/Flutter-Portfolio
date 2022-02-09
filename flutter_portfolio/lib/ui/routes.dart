@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/ui/home_screen.dart';
+import 'package:flutter_portfolio/projects/impacthub_planimetry/planimetry_screen.dart';
 
 class Routes{
 
@@ -12,8 +13,8 @@ class Routes{
   Routes(){
     runApp(
       MaterialApp(
-        title: "JERKOFF.CHAT",
-        home: HomeScreen(),
+        title: "Portfolio",
+        home: PlanimetryScreen(),
         debugShowCheckedModeBanner: false,
         routes: routes,
     ));
